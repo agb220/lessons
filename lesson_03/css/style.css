@@ -1,0 +1,37 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+#logo {
+  color: rgb(230, 188, 40);
+}
+
+header > ul > li > a {
+  color: blue;
+}
+
+header ul ul a {
+  color: green;
+}
+
+h1 {
+  color: rgb(154, 101, 204);
+}
+
+.about > p {
+  color: rgb(230, 188, 40);
+}
+.ukranian > p {
+  color: cadetblue;
+}
+
+.nature {
+  color: rgb(3, 64, 3);
+}
+
+.info {
+  color: red;
+}
+
+.item {
+  color: brown;
+}
