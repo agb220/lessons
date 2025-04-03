@@ -462,10 +462,13 @@ footer {
 .about-items {
   color: #4f4f4f;
   font-size: 20px;
-  line-height: 2.31;
 }
 
 .about-item {
   background: url("../img/task-4/check.png") 0 / 29px no-repeat;
-  padding-left: 44px;
+  padding: 5px 0 5px 44px;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 21px;
 }
