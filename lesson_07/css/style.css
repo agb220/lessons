@@ -231,6 +231,48 @@ footer {
   padding: 10px;
 }
 
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e0d3dd;
+  border: 1px solid #b21e8d;
+  background: #b21e8d;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.button:hover::before {
+  width: 15px;
+  height: 15px;
+  vertical-align: top;
+  background-color: #e975de;
+  border-radius: 50%;
+  margin-right: 5px;
+  content: "";
+}
+
+.button:hover::before {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border-radius: 40%;
+  background-color: #d02dbb;
+}
+
+.title-1 {
+  display: inline-block;
+  color: #dd29aa;
+}
+.title-1::after {
+  content: "";
+  height: 2px;
+  width: 45%;
+  background-color: #d745ba;
+  display: block;
+}
+
 /*----second task----*/
 .second {
   padding: 80px 0;
