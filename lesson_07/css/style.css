@@ -438,14 +438,11 @@ footer {
     0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.1);
 
   padding: 20px;
+  min-height: 476px;
 }
 
 .card:hover {
   background: #ffbe48;
-}
-
-.card-content {
-  min-height: 476px;
 }
 
 .card-block-img {
