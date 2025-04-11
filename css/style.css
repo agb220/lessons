@@ -1,0 +1,15 @@
+.lessons-menu li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.lessons-menu li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(159, 23, 63);
+  text-decoration: none;
+}
+
+.lessons-menu li a:hover {
+  color: #e34f88;
+  text-decoration: underline;
+}
