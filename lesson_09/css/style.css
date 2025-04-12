@@ -1,0 +1,9 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #dacfd6;
+  font-size: 19px;
+  color: #543549;
+}
