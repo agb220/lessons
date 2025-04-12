@@ -1,0 +1,94 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #dacfd6;
+  font-size: 19px;
+  color: #543549;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 15px;
+}
+.header {
+  padding: 20px 0;
+  border-bottom: 2px solid #dd29aa;
+  margin-bottom: 15px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  color: rgb(29, 34, 172);
+  text-shadow: 5px 5px 2px rgb(241, 241, 86), 3px 3px 1px rgb(241, 241, 5);
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  border-top: 2px solid rgb(226, 102, 191);
+  box-shadow: 0px 0px 5px 5px rgba(224, 99, 166, 0.3);
+}
+
+.footer-wrapper {
+  padding: 40px 0;
+  color: #d527a4cc;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  color: rgb(228, 144, 26);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ee67c8;
+  background: hsl(317, 50%, 79%);
+  box-shadow: 0px 5px 5px 8px rgba(230, 111, 190, 0.07);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 357px;
+  display: inline-block;
+}
+
+.text {
+  display: inline-block;
+}
+
+.svg {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.image {
+  max-width: 900px;
+}
+
+.adaptive-img-block {
+  margin-bottom: 40px;
+}
+
+.adaptive-img-block p {
+  margin-top: 15px;
+}
