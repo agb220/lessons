@@ -60,6 +60,7 @@ footer {
   border: 1px solid #ee67c8;
   background: hsl(317, 50%, 79%);
   box-shadow: 0px 5px 5px 8px rgba(230, 111, 190, 0.07);
+  overflow: hidden;
 }
 
 .item:not(:last-child) {
@@ -91,4 +92,10 @@ footer {
 
 .adaptive-img-block p {
   margin-top: 15px;
+}
+
+.border {
+  border-radius: 150px 0;
+  width: 557px;
+  height: 549px;
 }
