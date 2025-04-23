@@ -1,6 +1,8 @@
 /* Скидання стилів */
 @import url("reset.css");
 
+@import url("fonts.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -206,4 +208,175 @@ html {
 
 .add-to-cart.button {
   background: #f2f2f2;
+}
+
+.section-business {
+  font-family: "Circular Std", sans-serif;
+  background-color: #5a54f2;
+  color: #fff;
+  position: relative;
+}
+
+.section-business:before,
+.section-business:after {
+  position: absolute;
+  left: -5%;
+  width: 110%;
+  height: 60px;
+  content: "";
+}
+
+.section-business:before {
+  top: 0;
+  border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+  background-color: #fff;
+}
+
+.section-business:after {
+  bottom: 0;
+  border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+  background: #231f8b;
+}
+
+.section-business--margin {
+  margin-bottom: 60px;
+}
+
+.section-business__container {
+}
+
+.section-business__items {
+  padding: 97px 0 20px 0;
+}
+
+.section-business__item {
+  font-size: 0;
+}
+
+.section-business__item:nth-child(even) {
+  text-align: right;
+}
+
+.section-business__img-block {
+  max-width: 430px;
+  position: relative;
+  display: inline-block;
+  top: -100px;
+}
+
+.section-business__img-block--bottom {
+  top: 10px;
+}
+
+.section-business__img-block--margin-right {
+  margin-right: 70px;
+}
+
+.section-business__img {
+  border-radius: 20px;
+  box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.4);
+  position: relative;
+}
+
+.section-business__img--dark-shadow {
+  box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.3);
+}
+
+.section-business__img img {
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-business__blur {
+  position: absolute;
+  filter: blur(25px);
+  top: 97px;
+  right: 20px;
+  left: 20px;
+  height: 548px;
+  z-index: 2;
+}
+
+.section-business__decor {
+  position: absolute;
+}
+
+.small-circle--left {
+  top: 127px;
+  left: -90px;
+}
+
+.big-circle--left {
+  top: 213px;
+  left: -100px;
+  z-index: 3;
+}
+
+.dots--left {
+  top: 376px;
+  left: -90px;
+  z-index: 1;
+}
+
+.section-business__text-block {
+  max-width: 602px;
+  display: inline-block;
+}
+
+.section-business__text-block:nth-child(odd) {
+  max-width: 506px;
+  margin-right: 69px;
+  text-align: left;
+  /* vertical-align: middle; */
+}
+
+.section-business__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.section-business__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.28;
+  margin-bottom: 39px;
+  max-width: 480px;
+}
+
+.button-orange {
+  padding: 21px 26px 22px 26px;
+  border-radius: 60px;
+  background: #f35b09;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.button-orange:hover {
+  background: #ef651a;
+}
+
+.section-business__item--small {
+  max-width: 979px;
+}
+
+.small-circle--right {
+  right: 273px;
+  top: -45px;
+  z-index: 3;
+}
+
+.medium-circle--right {
+  right: -120px;
+  top: -20px;
+}
+
+.dots--right {
+  right: -150px;
+  bottom: 50px;
 }
