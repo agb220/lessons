@@ -24,7 +24,7 @@ html {
   background-color: rgb(216, 99, 160);
   color: beige;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 50;
   left: 0;
@@ -60,7 +60,7 @@ html {
 }
 
 .section-popular--margin {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 60px;
 }
 
@@ -328,7 +328,6 @@ html {
   max-width: 506px;
   margin-right: 69px;
   text-align: left;
-  /* vertical-align: middle; */
 }
 
 .section-business__title {
@@ -379,4 +378,35 @@ html {
 .dots--right {
   right: -150px;
   bottom: 50px;
+}
+
+.block {
+  font-size: 28px;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.block__name {
+  padding: 20px 0;
+  background-color: #231f8b;
+  text-align: center;
+}
+
+.block__name {
+  position: sticky;
+  top: 100px;
+}
+
+.block__name--green {
+  background-color: #00b207;
+}
+
+.block__name--purple {
+  background-color: purple;
+}
+
+.section--margin {
+  margin-bottom: 60px;
 }
