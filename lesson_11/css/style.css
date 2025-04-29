@@ -56,8 +56,12 @@ html {
 .page {
 }
 
-.page-margin {
+.page--margin {
   margin: 150px 0 100px 0;
+}
+
+.examples--margin {
+  margin-bottom: 50px;
 }
 
 .examples__rows {
@@ -194,4 +198,135 @@ html {
 .item__wrapper3d:nth-child(9):hover .item__box {
   transform: rotateY(150deg);
   backface-visibility: hidden;
+}
+
+/*---- task 2 ---- */
+
+.transport {
+  margin: 0 auto;
+  height: 1270px;
+  min-height: 100%;
+}
+.transport__container {
+  height: 100%;
+}
+.transport__title {
+  font-size: 34px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.transport__image {
+  background: url("../img/sea.webp") 0 0 / 100% no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.boat {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.boat__top {
+  height: 100%;
+}
+
+.boat__sail {
+}
+.sail {
+}
+
+.sail__sail {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 15%;
+  right: -5%;
+  border-radius: 0 25px 25px 0;
+  background: #ec9ed2;
+  transition: transform 0.3s ease;
+  box-shadow: 15px 20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.sail__sail:hover {
+  transform: rotate(3deg) translateY(-5px);
+}
+
+.sail__mast {
+  position: absolute;
+  width: 15px;
+  height: 585px;
+  top: 15%;
+  right: 30%;
+  border: 1px solid #e3bf63da;
+  background: rgb(138 76 10);
+  border-radius: 10px;
+}
+
+.boat__bottom {
+  height: 350px;
+  width: 1400px;
+  position: absolute;
+  bottom: 150px;
+  right: -100px;
+  border: 4px solid #e3bf63da;
+  border-radius: 25% 37% 10% 27% / 70% 0% 60% 95%;
+  background: #f0e09d;
+  box-shadow: 15px 20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.boat__inner {
+  position: relative;
+  height: 100%;
+}
+
+.boat__name {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  color: #e362b8;
+  padding-top: 60px;
+  padding-left: 100px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.boat__windows {
+  height: 150px;
+  width: 845px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  font-size: 0;
+}
+
+.boat__window {
+  height: 120px;
+  width: 120px;
+  border-radius: 50px;
+  background: #dbdee1;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px dotted #24a1e9;
+}
+
+.boat__window:not(:last-child) {
+  margin-right: 25px;
+}
+
+.boat__avatar {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.boat__window:hover .boat__avatar {
+  opacity: 1;
 }
