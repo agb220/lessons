@@ -152,6 +152,10 @@ html {
   cursor: pointer;
 }
 
+.button svg {
+  max-width: 100%;
+}
+
 .button:hover {
   background: #00b307;
   border: 1px solid #00b307;
@@ -177,7 +181,7 @@ html {
   cursor: pointer;
 }
 
-.product__name:hover {
+.product__name:hover a {
   text-decoration: underline;
 }
 
@@ -185,6 +189,7 @@ html {
   display: inline-block;
   margin-right: 60px;
   margin-bottom: 6px;
+  max-width: 120px;
 }
 
 .product__price {
@@ -203,7 +208,7 @@ html {
 
 .add-to-cart {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .add-to-cart.button {
@@ -247,6 +252,8 @@ html {
 
 .section-business__items {
   padding: 97px 0 20px 0;
+  max-width: 1229px;
+  margin: 0 auto;
 }
 
 .section-business__item {
@@ -303,19 +310,19 @@ html {
 }
 
 .small-circle--left {
-  top: 127px;
-  left: -90px;
+  top: 20%;
+  left: -23%;
 }
 
 .big-circle--left {
-  top: 213px;
-  left: -100px;
-  z-index: 3;
+  top: 40%;
+  left: -29%;
+  z-index: 1;
 }
 
 .dots--left {
-  top: 376px;
-  left: -90px;
+  top: 60%;
+  left: -23%;
   z-index: 1;
 }
 
@@ -357,7 +364,7 @@ html {
 }
 
 .button-orange:hover {
-  background: #ef651a;
+  background: #a7420c;
 }
 
 .section-business__item--small {
@@ -365,19 +372,19 @@ html {
 }
 
 .small-circle--right {
-  right: 273px;
-  top: -45px;
+  right: 70%;
+  top: -8%;
   z-index: 3;
 }
 
 .medium-circle--right {
-  right: -120px;
-  top: -20px;
+  right: -30%;
+  top: -6%;
 }
 
 .dots--right {
-  right: -150px;
-  bottom: 50px;
+  right: -38%;
+  bottom: 30.5%;
 }
 
 .block {
