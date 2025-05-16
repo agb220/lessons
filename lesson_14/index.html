@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Homework 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <p class="header__logo">HEADER</p>
+        </div>
+      </header>
+      <main class="page page--margin">
+        <section class="form">
+          <div class="form__container">
+            <h2 class="form__title">FORM</h2>
+            <form
+              method="post"
+              action="#"
+              enctype="multipart/form-data"
+              class="form__block"
+            >
+              <div class="form__columns">
+                <div class="form__column">
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="name">Name</label>
+                    <input
+                      id="name"
+                      autocomplete="off"
+                      placeholder="Name"
+                      name="form[]"
+                      type="text"
+                      class="form__input"
+                      required
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="phone">Phone number</label>
+                    <input
+                      id="phone"
+                      autocomplete="off"
+                      placeholder="+38 (___) ___ __ __"
+                      name="form[]"
+                      type="tel"
+                      class="form__input"
+                      pattern="^\+380\d{9}$"
+                      required
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="email">Email</label>
+                    <input
+                      id="email"
+                      autocomplete="off"
+                      placeholder="example@mail.com"
+                      name="form[]"
+                      type="email"
+                      class="form__input"
+                      pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="password">Password</label>
+                    <input
+                      type="password"
+                      placeholder="password"
+                      name="form[]"
+                      class="form__input"
+                      required
+                      minlength="5"
+                      maxlength="10"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="range">
+                      Range something
+                    </label>
+                    <input
+                      id="range"
+                      type="range"
+                      value="0"
+                      name="form[]"
+                      class="form__input"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <h3 class="form__subtitle">Favorite animal</h3>
+                    <label class="checkbox">
+                      <input
+                        type="checkbox"
+                        value="some"
+                        name="form[]"
+                        class="checkbox__input"
+                      />
+                      <span class="checkbox__label">Cat</span>
+                    </label>
+                    <label class="checkbox">
+                      <input
+                        type="checkbox"
+                        name="form[]"
+                        class="checkbox__input"
+                      />
+                      <span class="checkbox__label">Dog</span>
+                    </label>
+                    <label class="checkbox">
+                      <input
+                        type="checkbox"
+                        name="form[]"
+                        class="checkbox__input"
+                      />
+                      <span class="checkbox__label">Other</span>
+                    </label>
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label">Enter your text</label>
+                    <textarea name="form[]" class="form__textarea"></textarea>
+                  </div>
+                </div>
+                <div class="form__column">
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="age">Age</label>
+                    <input
+                      id="age"
+                      type="number"
+                      placeholder="age"
+                      name="form[]"
+                      class="form__input"
+                      min="16"
+                      max="100"
+                      step="1"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="color">
+                      Favorite color
+                    </label>
+                    <input
+                      type="color"
+                      name="form[]"
+                      class="form__input"
+                      id="color"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label" for="date">Visit date </label>
+                    <input
+                      type="date"
+                      id="date"
+                      placeholder="visit date"
+                      name="form[]"
+                      class="form__input"
+                      required
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <h3 class="form__subtitle">Favorite car</h3>
+                    <label class="options">
+                      <input
+                        checked
+                        type="radio"
+                        name="form[car]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Car 1</span>
+                    </label>
+                    <label class="options">
+                      <input
+                        type="radio"
+                        name="form[car]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Car 2</span>
+                    </label>
+                    <label class="options">
+                      <input
+                        type="radio"
+                        name="form[car]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Other</span>
+                    </label>
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <h3 class="form__subtitle">Favorite book</h3>
+                    <label class="options">
+                      <input
+                        type="radio"
+                        name="form[country]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Book 1</span>
+                    </label>
+                    <label class="options">
+                      <input
+                        checked
+                        type="radio"
+                        name="form[country]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Book 2</span>
+                    </label>
+                    <label class="options">
+                      <input
+                        checked
+                        type="radio"
+                        name="form[country]"
+                        class="options__input"
+                      />
+                      <span class="options__label">Other</span>
+                    </label>
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label"> Add file </label>
+                    <input
+                      multiple
+                      accept=".jpg, .png"
+                      name="form[]"
+                      type="file"
+                    />
+                  </div>
+                  <div class="form__line form__line--margin">
+                    <label class="form__label"> Choose</label>
+                    <select name="form[select]" class="form__input">
+                      <option value="1">Variant 1</option>
+                      <option selected value="2">Variant 2</option>
+                      <option value="3">Variant 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__buttons">
+                <button type="button" class="form__button form__button--second">
+                  I just a button
+                </button>
+                <button type="reset" class="form__button form__button--reset">
+                  Reset
+                </button>
+                <button type="submit" class="form__button">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer__menu">
+            <li class="footer__link">
+              <a href="https://github.com/agb220" target="_blank">GitHub</a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            Copyright © 2025 Anna Balabon. All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
