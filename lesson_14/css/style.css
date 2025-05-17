@@ -411,11 +411,11 @@ input.form__input#color {
   border-top: 1px solid #cccccc;
 }
 
-.detail__order--weight {
+.order__weight {
   font-weight: 500;
 }
 
-.detail__order--size {
+.order__size {
   font-size: 16px;
 }
 
