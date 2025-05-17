@@ -417,7 +417,8 @@
                 </div>
                 <div class="checkout__order order">
                   <h3 class="order__title">Order Summary</h3>
-                  <ul class="products product products--margin">
+
+                  <ul class="products product products--padding">
                     <li class="product__item">
                       <div class="product__block">
                         <div class="product__info">
@@ -448,52 +449,54 @@
                       </div>
                     </li>
                   </ul>
-                  <div class="order__details">
-                    <div class="order__detail">
-                      <span>Subtotal:</span>
-                      <span class="order__weight">$84.00</span>
+                  <div class="order__body">
+                    <div class="order__details">
+                      <div class="order__detail">
+                        <span>Subtotal:</span>
+                        <span class="order__weight">$84.00</span>
+                      </div>
+                      <div class="order__detail">
+                        <span>Shipping:</span>
+                        <span class="order__weight">Free</span>
+                      </div>
+                      <div class="order__detail">
+                        <span>Total:</span>
+                        <span class="order__weight order__size">$84.00</span>
+                      </div>
                     </div>
-                    <div class="order__detail">
-                      <span>Shipping:</span>
-                      <span class="order__weight">Free</span>
+                    <div class="order__payments">
+                      <h3 class="order__title order__title--margin">
+                        Payment Method
+                      </h3>
+                      <div class="order__payment">
+                        <label class="options">
+                          <input
+                            type="radio"
+                            name="form[payment]"
+                            class="options__input"
+                          />
+                          <span class="options__label">Cash on Delivery</span>
+                        </label>
+                        <label class="options">
+                          <input
+                            type="radio"
+                            name="form[payment]"
+                            class="options__input"
+                          />
+                          <span class="options__label">Paypal</span>
+                        </label>
+                        <label class="options">
+                          <input
+                            type="radio"
+                            name="form[payment]"
+                            class="options__input"
+                          />
+                          <span class="options__label">Amazon Pay</span>
+                        </label>
+                      </div>
                     </div>
-                    <div class="order__detail">
-                      <span>Total:</span>
-                      <span class="order__weight order__size">$84.00</span>
-                    </div>
+                    <button class="bottom">Place Order</button>
                   </div>
-                  <div class="order__payments">
-                    <h3 class="order__title order__title--margin">
-                      Payment Method
-                    </h3>
-                    <div class="order__payment">
-                      <label class="options">
-                        <input
-                          type="radio"
-                          name="form[payment]"
-                          class="options__input"
-                        />
-                        <span class="options__label">Cash on Delivery</span>
-                      </label>
-                      <label class="options">
-                        <input
-                          type="radio"
-                          name="form[payment]"
-                          class="options__input"
-                        />
-                        <span class="options__label">Paypal</span>
-                      </label>
-                      <label class="options">
-                        <input
-                          type="radio"
-                          name="form[payment]"
-                          class="options__input"
-                        />
-                        <span class="options__label">Amazon Pay</span>
-                      </label>
-                    </div>
-                  </div>
-                  <button class="bottom-green">Place Order</button>
                 </div>
               </form>
             </div>

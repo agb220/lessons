@@ -362,7 +362,7 @@ input.form__input#color {
   line-height: 1.5;
 }
 
-.products--margin {
+.products--padding {
   margin: 12px 0;
 }
 
@@ -392,8 +392,10 @@ input.form__input#color {
   font-weight: 500;
 }
 
-.order__details {
-  margin-bottom: 24px;
+.order__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .order__detail {
@@ -421,10 +423,6 @@ input.form__input#color {
 
 .order__title--margin {
   margin-bottom: 16px;
-}
-
-.order__payments {
-  margin-bottom: 24px;
 }
 
 .order__payment {
@@ -492,7 +490,7 @@ input.form__input#color {
   border-color: #00b207;
 }
 
-.bottom-green {
+.bottom {
   padding: 16px 40px;
   height: 50px;
   background: #00b207;
@@ -500,6 +498,6 @@ input.form__input#color {
   border-radius: 43px;
 }
 
-.bottom-green:hover {
+.bottom:hover {
   background: #07740a;
 }
