@@ -240,10 +240,10 @@ html {
 
 @keyframes boat {
   0% {
-    right: -150%;
+    transform: translateX(0%);
   }
   100% {
-    right: 0%;
+    transform: translateX(-150%);
   }
 }
 
@@ -267,6 +267,7 @@ html {
   height: 1270px;
   min-height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
