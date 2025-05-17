@@ -81,6 +81,8 @@ body {
   font-size: 38px;
   margin-bottom: 31px;
   line-height: 1.2;
+  display: flex;
+  flex-direction: column;
 }
 
 .professionals__items {
@@ -177,7 +179,7 @@ body {
 .available__items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 21px;
   color: #4f4f4f;
 }
 
@@ -193,16 +195,20 @@ body {
   background: url("../img/avialable/check.png") 0 0 / 100% no-repeat;
   flex-shrink: 0;
   flex-grow: 0;
-  width: 21px;
-  height: 21px;
+  width: 29px;
+  height: 29px;
 }
 
 .available__img {
   flex-basis: 764px;
-  max-height: 521px;
+  height: 521px;
   position: relative;
   top: 0;
   right: -10%;
+}
+
+.available__img img {
+  min-height: 100%;
 }
 
 .advantages {
@@ -221,6 +227,7 @@ body {
 .advantages__cards {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
