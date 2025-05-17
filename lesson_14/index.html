@@ -18,7 +18,7 @@
         </div>
       </header>
       <main class="page page--margin">
-        <section class="form">
+        <section class="form form--margin">
           <div class="form__container">
             <h2 class="form__title">FORM</h2>
             <form
@@ -247,6 +247,260 @@
             </form>
           </div>
         </section>
+        <div class="checkout">
+          <div class="checkout__breadkrambs">
+            <img src="./img/breadcrumbs.avif" alt="Food shop" />
+          </div>
+          <div class="checkout__container">
+            <div class="checkout__block">
+              <form
+                method="post"
+                action="#"
+                enctype="multipart/form-data"
+                class="checkout__form"
+              >
+                <div class="checkout__billing">
+                  <h2 class="checkout__title">Billing Information</h2>
+                  <div class="checkout__line checkout__line--margin">
+                    <div class="input">
+                      <label for="name" class="input__label">First name</label>
+                      <input
+                        name="form[name]"
+                        id="name"
+                        type="text"
+                        class="input__input"
+                        placeholder="Your first name"
+                        required
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="lastName" class="input__label"
+                        >Last name</label
+                      >
+                      <input
+                        name="form[lastName]"
+                        id="lastName"
+                        type="text"
+                        class="input__input"
+                        placeholder="Your last name"
+                        required
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="companyName" class="input__label"
+                        >Company Name (optional)</label
+                      >
+                      <input
+                        name="form[companyName]"
+                        id="companyName"
+                        type="text"
+                        class="input__input"
+                        placeholder="Company name"
+                      />
+                    </div>
+                  </div>
+                  <div class="checkout__line checkout__line--margin">
+                    <div class="input">
+                      <label for="address" class="input__label"
+                        >Street Address</label
+                      >
+                      <input
+                        id="address"
+                        name="form[address]"
+                        type="text"
+                        class="input__input"
+                        placeholder="Your address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="checkout__line checkout__line--margin">
+                    <div class="select">
+                      <label for="country-region" class="select__label"
+                        >Country / Region</label
+                      >
+                      <select
+                        name="form[country-region]"
+                        id="country-region"
+                        class="select__input"
+                        required
+                      >
+                        <option value="" selected hidden>Select</option>
+                        <option value="1">Country 1</option>
+                        <option value="2">Country 2</option>
+                        <option value="3">Country 3</option>
+                      </select>
+                    </div>
+                    <div class="select">
+                      <label for="states" class="select__label">States</label>
+                      <select
+                        name="form[states]"
+                        id="states"
+                        class="select__input"
+                        required
+                      >
+                        <option value="" selected hidden>Select</option>
+                        <option value="1">States 1</option>
+                        <option value="2">States 2</option>
+                        <option value="3">States 3</option>
+                      </select>
+                    </div>
+                    <div class="input">
+                      <label for="zip-code" class="input__label"
+                        >Zip Code</label
+                      >
+                      <input
+                        name="form[zip-code]"
+                        id="zip-code"
+                        type="text"
+                        class="input__input"
+                        placeholder="Zip Code"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="checkout__line checkout__line--margin-large">
+                    <div class="input">
+                      <label for="email" class="input__label">Email</label>
+                      <input
+                        name="form[email]"
+                        id="email"
+                        type="email"
+                        class="input__input"
+                        placeholder="Email Address"
+                        required
+                        pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="phone" class="input__label">Phone</label>
+                      <input
+                        name="form[phone]"
+                        id="phone"
+                        type="tel"
+                        inputmode="tel"
+                        class="input__input"
+                        placeholder="Phone number"
+                        required
+                        pattern="^\+?[0-9\s\-]{7,15}$"
+                      />
+                    </div>
+                  </div>
+                  <div class="checkout__line">
+                    <div class="checkbox">
+                      <input
+                        id="differentAddress"
+                        type="checkbox"
+                        name="form[differentAddress]"
+                        class="checkbox__input"
+                      />
+                      <label class="checkbox__label" for="differentAddress"
+                        >Ship to a different address
+                      </label>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <h2 class="checkout__title">Additional Info</h2>
+                  <div class="checkout__line">
+                    <div class="input">
+                      <label for="notes" class="input__label"
+                        >Order Notes (Optional)</label
+                      >
+                      <textarea
+                        id="notes"
+                        name="form[notes]"
+                        class="input__textarea"
+                        placeholder="Notes about your order, e.g. special notes for delivery"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__order order">
+                  <h3 class="order__title">Order Summary</h3>
+                  <ul class="products product products--margin">
+                    <li class="product__item">
+                      <div class="product__block">
+                        <div class="product__info">
+                          <div class="product__img">
+                            <img src="./img/products/pepper.png" alt="Pepper" />
+                          </div>
+                          <h4 class="product__name">Green Capsicum</h4>
+                          <span> X</span>
+                          <p class="product__quality">5</p>
+                        </div>
+                        <div class="product__price">$70.00</div>
+                      </div>
+                    </li>
+                    <li class="product__item">
+                      <div class="product__block">
+                        <div class="product__info">
+                          <div class="product__img">
+                            <img
+                              src="./img/products/pepper-red.png"
+                              alt="Pepper Red"
+                            />
+                          </div>
+                          <h4 class="product__name">Red Capsicum</h4>
+                          <span> X</span>
+                          <p class="product__quality">1</p>
+                        </div>
+                        <div class="product__price">$14.00</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="order__details">
+                    <div class="order__detail">
+                      <span>Subtotal:</span>
+                      <span class="detail__order--weight">$84.00</span>
+                    </div>
+                    <div class="order__detail">
+                      <span>Shipping:</span>
+                      <span class="detail__order--weight">Free</span>
+                    </div>
+                    <div class="order__detail">
+                      <span>Total:</span>
+                      <span class="detail__order--weight detail__order--size"
+                        >$84.00</span
+                      >
+                    </div>
+                  </div>
+                  <div class="order__payments">
+                    <h3 class="order__title order__title--margin">
+                      Payment Method
+                    </h3>
+                    <div class="order__payment">
+                      <label class="options">
+                        <input
+                          type="radio"
+                          name="form[payment]"
+                          class="options__input"
+                        />
+                        <span class="options__label">Cash on Delivery</span>
+                      </label>
+                      <label class="options">
+                        <input
+                          type="radio"
+                          name="form[payment]"
+                          class="options__input"
+                        />
+                        <span class="options__label">Paypal</span>
+                      </label>
+                      <label class="options">
+                        <input
+                          type="radio"
+                          name="form[payment]"
+                          class="options__input"
+                        />
+                        <span class="options__label">Amazon Pay</span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="bottom-green">Place Order</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__container">
