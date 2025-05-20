@@ -183,12 +183,12 @@ body {
 }
 
 .product__wrapper .product__active-group {
-  opacity: 0;
-}
-
-.product__wrapper:hover .product__active-group {
   opacity: 1;
 }
+
+/* .product__wrapper:hover .product__active-group {
+  opacity: 1;
+} */
 
 .product__whishlist {
   margin-bottom: 6px;
@@ -472,6 +472,10 @@ body {
 }
 
 @media (any-hover: hover) {
+  .product__wrapper .product__active-group {
+    opacity: 0;
+  }
+
   .product__wrapper:hover .product__active-group {
     opacity: 1;
   }
