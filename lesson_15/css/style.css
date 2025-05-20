@@ -470,3 +470,9 @@ body {
     gap: 24px;
   }
 }
+
+@media (any-hover: hover) {
+  .product__wrapper .product__active-group {
+    opacity: 1;
+  }
+}
