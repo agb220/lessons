@@ -460,6 +460,9 @@ body {
 }
 
 @media (min-width: 991px) {
+  .product__wrapper:hover .product__active-group {
+    opacity: 0;
+  }
   .product {
     flex: 1 1 20%;
   }
