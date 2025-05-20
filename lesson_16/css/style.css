@@ -1,0 +1,55 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1350px;
+  padding: 0 15px;
+}
+
+[class*="--margin"] {
+}
+
+.footer {
+  padding: 25px 0;
+  font-size: 24px;
+  background-color: rgb(216, 99, 160);
+  color: beige;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 18px;
+  color: #c7c7bd;
+  margin-bottom: 20px;
+}
+
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: beige;
+  color: #c7c7bd;
+}
