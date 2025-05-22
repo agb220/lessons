@@ -162,6 +162,10 @@ input.form__input#color {
   border: 1px solid #000;
 }
 
+.form__textarea:focus-visible {
+  border: 1px solid #498360;
+}
+
 .form__buttons {
   margin: 0 auto;
   display: flex;
@@ -198,6 +202,11 @@ input.form__input#color {
 }
 
 /*---2 task---*/
+
+.checkout {
+  width: 100%;
+  overflow: hidden;
+}
 
 .checkout__breadkrambs {
   margin-bottom: 32px;
@@ -269,6 +278,20 @@ input.form__input#color {
   gap: 8px;
   min-width: 280px;
   width: 100%;
+  color: 999;
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+select:valid {
+  color: green;
+}
+
+option {
+  color: 999;
 }
 
 .select__input {
@@ -291,7 +314,10 @@ input.form__input#color {
 }
 
 .checkbox__input {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .checkbox__label {
@@ -321,7 +347,7 @@ input.form__input#color {
 .checkbox__input:checked + .checkbox__label::after {
   content: "";
   position: absolute;
-  left: 6px;
+  left: 8px;
   top: 35%;
   transform: translateY(-50%) rotate(45deg);
   width: 6px;
@@ -330,10 +356,14 @@ input.form__input#color {
   border-bottom: 1px solid #fff;
 }
 
-.line {
-  padding-top: 32px;
+.checkbox__input:focus-visible + .checkbox__label {
+  outline: 1px solid #2cdf18;
+  outline-offset: 3px;
+}
+
+.border-bottom {
+  padding-bottom: 32px;
   width: 100%;
-  height: 10px;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 32px;
 }
@@ -346,14 +376,19 @@ input.form__input#color {
   resize: vertical;
   border: 1px solid #e6e6e6;
 }
+textarea {
+  min-height: 120px;
+}
 
 .checkout__order {
   flex-basis: 424px;
   padding: 24px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   border-radius: 8px;
   border: 1px solid #e6e6e6;
+  align-self: flex-start;
+  gap: 5px;
 }
 
 .order__title {
@@ -362,8 +397,14 @@ input.form__input#color {
   line-height: 1.5;
 }
 
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1;
+}
+
 .products--padding {
-  margin: 12px 0;
+  padding: 12px 0;
 }
 
 .product__item {
@@ -374,6 +415,23 @@ input.form__input#color {
 .product__img {
   max-height: 60px;
   max-width: 60px;
+  cursor: pointer;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.product__img:hover {
+  transform: scale(1.05);
+}
+.product__name {
+  min-width: fit-content;
+}
+.product__link {
+  cursor: pointer;
+}
+
+.product__link:hover {
+  text-decoration: underline;
 }
 
 .product__block {
@@ -385,7 +443,13 @@ input.form__input#color {
 .product__info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6px;
+}
+
+.product__quality {
+  appearance: none;
+  align-items: flex-start;
 }
 
 .product__price {
@@ -440,6 +504,7 @@ input.form__input#color {
 .options__input {
   opacity: 0;
   position: absolute;
+  width: 0;
 }
 
 .options__label {
@@ -490,7 +555,12 @@ input.form__input#color {
   border-color: #00b207;
 }
 
-.bottom {
+.options__input:focus-visible + .options__label {
+  outline: 1px solid #00b207;
+  outline-offset: 3px;
+}
+
+.button {
   padding: 16px 40px;
   height: 50px;
   background: #00b207;
@@ -498,6 +568,6 @@ input.form__input#color {
   border-radius: 43px;
 }
 
-.bottom:hover {
+.button:hover {
   background: #07740a;
 }

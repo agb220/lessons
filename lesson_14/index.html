@@ -69,6 +69,7 @@
                   <div class="form__line form__line--margin">
                     <label class="form__label" for="password">Password</label>
                     <input
+                      id="password"
                       type="password"
                       placeholder="password"
                       name="form[]"
@@ -153,7 +154,6 @@
                     <input
                       type="date"
                       id="date"
-                      placeholder="visit date"
                       name="form[]"
                       class="form__input"
                       required
@@ -263,10 +263,12 @@
                   <h2 class="checkout__title">Billing Information</h2>
                   <div class="checkout__line checkout__line--margin">
                     <div class="input">
-                      <label for="name" class="input__label">First name</label>
+                      <label for="firstName" class="input__label"
+                        >First name</label
+                      >
                       <input
                         name="form[name]"
-                        id="name"
+                        id="firstName"
                         type="text"
                         class="input__input"
                         placeholder="Your first name"
@@ -361,10 +363,10 @@
                   </div>
                   <div class="checkout__line checkout__line--margin-large">
                     <div class="input">
-                      <label for="email" class="input__label">Email</label>
+                      <label for="email2" class="input__label">Email</label>
                       <input
                         name="form[email]"
-                        id="email"
+                        id="email2"
                         type="email"
                         class="input__input"
                         placeholder="Email Address"
@@ -373,10 +375,10 @@
                       />
                     </div>
                     <div class="input">
-                      <label for="phone" class="input__label">Phone</label>
+                      <label for="phone2" class="input__label">Phone</label>
                       <input
                         name="form[phone]"
-                        id="phone"
+                        id="phone2"
                         type="tel"
                         inputmode="tel"
                         class="input__input"
@@ -386,7 +388,7 @@
                       />
                     </div>
                   </div>
-                  <div class="checkout__line">
+                  <div class="checkout__line border-bottom">
                     <div class="checkbox">
                       <input
                         id="differentAddress"
@@ -399,7 +401,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="line"></div>
+
                   <h2 class="checkout__title">Additional Info</h2>
                   <div class="checkout__line">
                     <div class="input">
@@ -422,12 +424,19 @@
                     <li class="product__item">
                       <div class="product__block">
                         <div class="product__info">
-                          <div class="product__img">
+                          <a class="product__img">
                             <img src="./img/products/pepper.png" alt="Pepper" />
-                          </div>
-                          <h4 class="product__name">Green Capsicum</h4>
+                          </a>
+                          <h4 class="product__name">
+                            <a href="#" class="product__link">Green Capsicum</a>
+                          </h4>
                           <span> X</span>
-                          <p class="product__quality">5</p>
+                          <input
+                            class="product__quality"
+                            value="5"
+                            type="number"
+                            disabled
+                          />
                         </div>
                         <div class="product__price">$70.00</div>
                       </div>
@@ -435,15 +444,22 @@
                     <li class="product__item">
                       <div class="product__block">
                         <div class="product__info">
-                          <div class="product__img">
+                          <a href="#" class="product__img">
                             <img
                               src="./img/products/pepper-red.png"
                               alt="Pepper Red"
                             />
-                          </div>
-                          <h4 class="product__name">Red Capsicum</h4>
+                          </a>
+                          <h4 class="product__name">
+                            <a href="#" class="product__link"> Red Capsicum</a>
+                          </h4>
                           <span> X</span>
-                          <p class="product__quality">1</p>
+                          <input
+                            class="product__quality"
+                            value="1"
+                            type="number"
+                            disabled
+                          />
                         </div>
                         <div class="product__price">$14.00</div>
                       </div>
@@ -495,7 +511,7 @@
                         </label>
                       </div>
                     </div>
-                    <button class="bottom">Place Order</button>
+                    <button class="button" type="submit">Place Order</button>
                   </div>
                 </div>
               </form>
