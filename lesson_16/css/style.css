@@ -11,9 +11,13 @@ body {
   color: #000000;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
-  overflow: clip;
+  overflow: visible;
 
   display: flex;
   flex-direction: column;
@@ -39,7 +43,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 15;
   max-height: 97px;
 }
 
@@ -50,12 +54,15 @@ body {
   justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 25px;
+  height: 100%;
 }
 
 .logo {
   display: flex;
   gap: 8.5px;
   align-items: center;
+  position: relative;
+  z-index: 5;
 }
 
 .logo__img {
@@ -73,18 +80,18 @@ body {
 
 .menu__body {
   position: fixed;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100%;
+  height: calc(100vh - 97px);
   right: -100%;
   top: 97px;
   z-index: 3;
   background-color: #f26522;
   padding: 50px 15px 50px 15px;
   transition: all 0.3s;
-  height: 100vh;
+  overflow: auto;
 }
 .menu__body::before {
   content: "";
@@ -92,9 +99,11 @@ body {
   top: 97px;
   right: -100%;
   width: 100%;
+  height: 97px;
   z-index: 3;
   transition: all 0.3s;
 }
+
 .menu-open .menu__body,
 .menu-open .menu__body::before {
   right: 0;
@@ -164,6 +173,8 @@ body {
   display: flex;
   gap: 25px;
   align-items: center;
+  position: relative;
+  z-index: 5;
 }
 
 .button {
