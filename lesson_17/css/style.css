@@ -1,0 +1,204 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/*fonts*/
+@import url("fonts.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", san-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px;
+}
+
+.page-margin-top {
+  margin-top: 100px;
+}
+
+[class*="--margin"] {
+  margin-bottom: 50px;
+}
+
+.header {
+  padding: 20px 0;
+  font-size: 24px;
+  background-color: rgb(216, 99, 160);
+  color: beige;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  padding: 25px 0;
+  font-size: 24px;
+  background-color: rgb(216, 99, 160);
+  color: beige;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 18px;
+  color: #c7c7bd;
+  margin-bottom: 20px;
+}
+
+.footer__link a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: beige;
+  color: #c7c7bd;
+}
+
+.practice__title {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/*-----Floral----*/
+
+.floral {
+  font-family: "KoPubBatang", serif;
+  background: #f8f3ec;
+}
+
+.floral__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.floral__block {
+  padding-bottom: 100px;
+  display: flex;
+  gap: 32px;
+}
+
+.floral__small {
+  flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-self: flex-start;
+}
+
+.floral__small-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.floral__big {
+  padding-top: 52px;
+  flex: 1 0 70%;
+}
+
+.floral__title {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 78px;
+}
+
+.floral__item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.floral__link {
+  display: flex;
+}
+
+.floral__link img {
+  aspect-ratio: 401 / 427;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.floral__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.floral__active-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.floral__name {
+  color: #2c2c2c;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.floral__active {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.floral__icon {
+  aspect-ratio: 23 / 23;
+  object-fit: contain;
+}
+
+.floral__button {
+  padding: 10px 9px 11px 10px;
+  border: 1px solid #dbccba;
+  width: fit-content;
+  max-height: 62px;
+}
+
+.floral__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #dbccba;
+  color: #2c2c2c;
+  font-size: 17px;
+  line-height: 1.38;
+  padding: 9px 30px;
+}
+
+.floral__button-wrapper img {
+  aspect-ratio: 23 / 14;
+  object-fit: contain;
+  flex-shrink: 0;
+}
