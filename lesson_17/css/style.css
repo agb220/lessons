@@ -290,11 +290,6 @@ body {
   min-height: 423px;
 }
 
-.banner-desktop {
-  overflow: hidden;
-  opacity: 0;
-  display: none;
-}
 .banner__wrapper {
   position: relative;
   height: 100%;
@@ -651,8 +646,7 @@ body {
   .big-block__title {
     font-size: 48px;
     margin-bottom: 20px;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-column: span 2;
   }
 
   .block__small {
@@ -797,18 +791,6 @@ body {
 
   .top-products__title {
     margin-bottom: 16px;
-  }
-
-  .banner-desktop {
-    overflow: visible;
-    opacity: 1;
-    display: block;
-  }
-
-  .banner-mobile {
-    overflow: hidden;
-    opacity: 0;
-    display: none;
   }
 }
 
