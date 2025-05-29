@@ -817,7 +817,7 @@ body {
   .product-card__wrapper:hover .product-card__active {
     opacity: 1;
     visibility: visible;
-    transform: translate(50% 10%);
+    transform: translate(50%, 10%);
   }
 
   .item__link img:hover {
