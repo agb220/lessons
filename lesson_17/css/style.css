@@ -187,7 +187,7 @@ body {
   object-fit: contain;
   max-width: 23px;
   cursor: pointer;
-  transition: opacity 0.3;
+  transition: opacity 0.3s;
 }
 
 .item__price {
@@ -205,7 +205,7 @@ body {
   align-self: center;
   width: 100%;
   cursor: pointer;
-  transition: background-color 0.3;
+  transition: background-color 0.3s;
 }
 
 .button-floral__wrapper {
