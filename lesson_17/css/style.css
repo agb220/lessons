@@ -301,7 +301,7 @@ body {
 
 .banner__img::before {
   content: "";
-  background-color: #55505040;
+  background-color: #635e5e40;
   position: absolute;
   top: 0;
   bottom: 0;
